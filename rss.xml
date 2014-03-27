@@ -16,6 +16,12 @@
     <description>3ertert</description>
 	<author>thes2life@gmail.com</author>
   </item>
+  <item>
+    <title>This is a test feed item</title>
+    <link>file:///C:/Users/Leon/Code/root/blogs.html#sitelaunch</link>
+    <description>IT WORKS!!!</description>
+	<author>thes2life@gmail.com</author>
+  </item>
 </channel>
 
 </rss>
