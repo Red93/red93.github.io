@@ -79,11 +79,11 @@ a:active	{ color:; }
 	margin:8px auto;
 }
 	.nav-wrapper h2 {
-		color:#aaa;
+		color:#777;
 		padding:16px 0 16px 0;
 		margin:auto;
 		font-family:'Alegreya Sans SC', sans-serif;
-		font-weight:lighter;
+		text-shadow:rgba(255,255,255,1.00) 0 1px 0;
 	}
 	
 	.nav-wrapper a {
