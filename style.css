@@ -128,7 +128,7 @@ table {
 
 /* Blog posts */
 	.post {
-		margin:auto;
+		margin:auto auto 25px auto;
 		width:720px;
 		color:#444;
 		border:1px solid #bbb;
