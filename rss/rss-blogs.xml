@@ -1,18 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0"?>
 <rss version="2.0">
 	<channel>
-		<title>Leon Williams</title>
-		<link>file:///C:/Users/Leon/Code/root/index.html</link>
-		<description>My site</description>
-		<language>en-us</language>
-		<image></image>
-		<width></width>
-		<height></height>
+		<title>Blogs by Leon Williams</title>
+		<link>http://red93.github.io</link>
+		<description>These are blogs written by mwah.</description>
+		<pubDate>Tue, 25 Mar 2014 00:00:00 -0400</pubDate>
 		<item>
-			<title>RSS Tutorial</title>
-			<link>file:///C:/Users/Leon/Code/root/blogs.html#sitelaunch</link>
-			<description>3ertert</description>
-			<author>thes2life@gmail.com</author>
-			<pubDate>Thu, 27 Mar 2014 23:27:15 -0400</pubDate></item>
-		<pubDate>Thu, 27 Mar 2014 23:26:43 -0400</pubDate></channel>
+			<title>Site Launch</title>
+			<description>Tiz my site debute!</description>
+			<link>http://red93.github.io/blog.html#sitelaunch</link>
+			<pubDate>Tue, 25 Mar 2014 00:00:00 -0400</pubDate>
+		</item>
+	</channel>
 </rss>
