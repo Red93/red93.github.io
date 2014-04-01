@@ -1,6 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
 
+::selection			{	color:#08542D;
+						background:rgba(13,144,65,0.30);}
+::-moz-selection	{	color:#08542D;
+						background:rgba(178,235,201,0.80);}
+
 HTML, body {
 	margin:0;
 	padding:0;
