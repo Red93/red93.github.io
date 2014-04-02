@@ -10,6 +10,12 @@
 		<description>If you want to know then new things happen on my site that may not be worthy of an entire blog, then this is the feed to subscribe to. When new features are added or changed on the site, or if I upload a new project, etc., I will notify subscribers by updating this feed. New blog posts will typically not be included in this feed, however, if you would like to follow my blog, you can do so here: http://red93.github.io/rss/rss-blogs.xml</description>
 		
 			<item>
+				<title>RSS feeds</title>
+				<pubDate>Tue, 2 Apr 2014</pubDate>
+				<link>http://red93.github.io/blog</link>
+				<description>Two new RSS feeds added to the site: the one you're reading and one for my blog.</description>
+			</item>
+			<item>
 				<title>Site Creation</title>
 				<pubDate>Tue, 25 Mar 2014 00:00:00 -0400</pubDate>
 				<link>http://red93.github.io/</link>
