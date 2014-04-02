@@ -2,10 +2,10 @@
 <?xml-stylesheet type="text/css" href="rss.css"?>
 <rss version="2.0">
 	<channel>
-		<title>Blog Posts by Leon Williams
-		<author>thes2life@gmail.com</author>
-		</title>
+		<title>Blog Posts by Leon Williams</title>
+				
 		<link>http://red93.github.io/rss/rss-blogs.xml</link>
+		<source>http://red93.github.io/blog</source>
 		<note>This is a RSS feed. To follow this feed, give your RSS feed reader the link to this page.</note>
 		
 			<item>
@@ -15,6 +15,7 @@
 				<description>Site debut: Day 1!</description>
 			</item>
 			
+		<author>thes2life@gmail.com</author>
 		<pubDate>Tue, 25 Mar 2014</pubDate>
 		<language>en-us</language>
 		<category>Blog</category>

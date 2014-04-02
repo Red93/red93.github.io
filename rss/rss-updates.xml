@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="rss.css"?>
+<rss version="2.0">
+	<channel>
+		<title>Updates by Leon Williams</title>
+				
+		<link>http://red93.github.io/rss/rss-updates.xml</link>
+		<source>http://red93.github.io/blog</source>
+		<note>This is a RSS feed. To follow this feed, give your RSS feed reader the link to this page.</note>
+		<description>If you want to know then new things happen on my site that may not be worthy of an entire blog, then this is the feed to subscribe to. When new features are added or changed on the site, or if I upload a new project, etc., I will notify subscribers by updating this feed. New blog posts will typically not be included in this feed, however, if you would like to follow my blog, you can do so here: http://red93.github.io/rss/rss-blogs.xml</description>
+		
+			<item>
+				<title>Site Creation</title>
+				<pubDate>Tue, 25 Mar 2014 00:00:00 -0400</pubDate>
+				<link>http://red93.github.io/</link>
+				<description></description>
+			</item>
+			
+		<author>thes2life@gmail.com</author>
+		<pubDate>Tue, 25 Mar 2014</pubDate>
+		<language>en-us</language>
+		<category>Updates</category>
+		<copyright>© 2014, Leon Williams</copyright>			
+	</channel>
+</rss>

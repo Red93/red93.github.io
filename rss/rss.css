@@ -22,11 +22,22 @@ channel title>author {
 	letter-spacing:13px;
 	color:rgba(0,0,0,0.50);
 }
+channel>description {
+	color:#aaa;
+	display:block;
+	float:left;
+	clear:both;
+	font-size:16px;
+	margin:4px 0 16px 20px;
+	line-height:125%;
+}
 channel note {
 	display:block;
 	float:left;
 	font-size:16px;
-	margin:8px 0 32px 8px;
+	margin:16px 0 4px 8px;
+	font-weight:bold;
+	letter-spacing:0.3px;
 }
 channel author, channel link {
 	display:block;
@@ -36,7 +47,7 @@ channel author, channel link {
 channel link {
 	display:none;
 }
-channel>pubDate, channel>language, channel>copyright, channel>category {
+channel>pubDate, channel>language, channel>copyright, channel>category, channel>source, channel>author {
 	display:block;
 	position:relative;
 	bottom:0;
