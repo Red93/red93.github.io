@@ -96,3 +96,6 @@ channel>pubDate, channel>language, channel>copyright, channel>category {
 			padding:8px 24px;
 			font-weight:normal;
 		}
+#stylish-20, .stylish {
+	display:none;
+}
