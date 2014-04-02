@@ -1,16 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="rss.css"?>
 <rss version="2.0">
 	<channel>
-		<title>Blogs by Leon Williams</title>
-		<link>http://red93.github.io</link>
+		<title>Blog Posts by Leon Williams
 		<author>thes2life@gmail.com</author>
-		<description>These are blogs written by mwah.</description>
-		<pubDate>Tue, 25 Mar 2014 00:00:00 -0400</pubDate>
-		<item>
-			<title>Site Launch</title>
-			<description>Tiz my site debute!</description>
-			<link>http://red93.github.io/blog.html#sitelaunch</link>
-			<pubDate>Tue, 25 Mar 2014 00:00:00 -0400</pubDate>
-		</item>
+		</title>
+		<link>http://red93.github.io/rss/rss-blogs.xml</link>
+		<note>This is a RSS feed. To follow this feed, give your RSS feed reader the link to this page.</note>
+		
+			<item>
+				<title>Site Launch</title>
+				<pubDate>Tue, 25 Mar 2014 00:00:00 -0400</pubDate>
+				<link>http://red93.github.io/blog.html#sitelaunch</link>
+				<description>Site debut: Day 1!</description>
+			</item>
+			
+		<pubDate>Tue, 25 Mar 2014</pubDate>
+		<language>en-us</language>
+		<category>Blog</category>
+		<copyright>© 2014, Leon Williams</copyright>			
 	</channel>
 </rss>

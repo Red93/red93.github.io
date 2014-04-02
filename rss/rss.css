@@ -1,0 +1,98 @@
+rss {
+	font-family:Helvetica, sans-serif;
+	background:#171717;
+	color:#cacaca;
+}
+channel title {
+	color:#cabaaa;
+	display:block;
+	padding:25px;
+	font-weight:bold;
+	font-size:24px;
+	letter-spacing:1px;
+	background-color:#4a3a2a;
+	border-bottom:#654 1px solid;
+	border-top:#432 1px solid;
+	box-shadow:#000 0 1px 0;
+	margin-bottom:4px;
+	text-shadow:#000 -1px -1px 1px;
+}
+channel title>author {
+	text-shadow:none;
+	letter-spacing:13px;
+	color:rgba(0,0,0,0.50);
+}
+channel note {
+	display:block;
+	float:left;
+	font-size:16px;
+	margin:8px 0 32px 8px;
+}
+channel author, channel link {
+	display:block;
+	color:#888;
+	font-size:12px;
+}
+channel link {
+	display:none;
+}
+channel>pubDate, channel>language, channel>copyright, channel>category {
+	display:block;
+	position:relative;
+	bottom:0;
+	margin-top:2px;
+	margin-left:4px;
+	font-size:12px;
+	color:#555;
+}
+
+	channel item {
+		background:#222;
+		border:1px solid #000;
+		display:block;
+		clear:both;
+		padding:0;
+		margin:20px 20px;
+		box-shadow: #543 1px 1px 0px,
+					#543 -1px 1px 0px,
+					#543 1px -1px 0px,
+					#543 -1px -1px 0px;
+	}
+	
+		channel item title {
+			background-color:#4a3a2a;
+			color:#cabaaa;
+			display:block;
+			font-size:18px;
+			font-weight:bold;
+			margin-bottom:8px;
+			padding:4px 4px 4px 8px;
+			text-shadow:none;
+			border-bottom:#654 1px solid;
+			border-top:#432 1px solid;
+		}
+		channel item pubDate, channel item link {
+			color:#888;
+			text-shadow:rgba(0,0,0,1.00) 1px 1px 0px;
+		}
+		channel item pubDate {
+			font-style:italic;
+			font-size:12px;
+			float:left;
+			margin-left:12px;
+		}
+		channel item link {
+			display:block;
+			font-size:86%;
+			float:left;
+			margin-left:24px;
+		}
+		channel item description {
+			clear:both;
+			font-size:16px;
+			display: block;
+			float:none; margin:0;
+			text-align: left;
+			padding:8px 24px;
+			font-weight:normal;
+		}
