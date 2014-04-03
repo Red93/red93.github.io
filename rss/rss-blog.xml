@@ -9,8 +9,14 @@
 		<note>This is a RSS feed. To follow this feed, give your RSS feed reader the link to this page.</note>
 		
 			<item>
+				<title>RSS Feed Additions and General Overview</title>
+				<pubDate>Wed, 2 Apr 2014</pubDate>
+				<link>http://red93.github.io/blog.html#rssadd</link>
+				<description>In this post I mention the new RSS feeds to my site and briefly go over how RSS feeds work in general.</description>
+			</item>
+			<item>
 				<title>Site Launch</title>
-				<pubDate>Tue, 25 Mar 2014 00:00:00 -0400</pubDate>
+				<pubDate>Tue, 25 Mar 2014</pubDate>
 				<link>http://red93.github.io/blog.html#sitelaunch</link>
 				<description>Site debut: Day 1</description>
 			</item>
