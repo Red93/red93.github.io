@@ -125,6 +125,7 @@ a:active	{ color:; }
 
 .title-float {
 	float:left;
+	max-width:512px;
 }
 
 table {
