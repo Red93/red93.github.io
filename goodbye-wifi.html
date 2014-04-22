@@ -1,0 +1,413 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Goodbye, Wifi</title>
+<link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+<style>
+::selection			{	color:#ffa;
+						background:rgba(240,156,18,0.82);}
+::-moz-selection	{	color:#ffa;
+						background:rgba(240,156,18,0.82);}
+
+HTML, body {
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100%;
+}
+body {
+	position:absolute;
+	color:#666;
+	background:#fff;
+	font-family:Helvetica, Gotham, "Helvetica Neue", Arial, sans-serif
+}
+.wrap {min-height: 100%; margin:0; height:auto;}
+.cry {
+	font-size:64px;
+	transform:rotate(120deg);
+	-ms-transform:rotate(120deg);
+	-webkit-transform:rotate(120deg);
+	position:absolute;
+	top:16px;
+	right:16px;
+}
+.header {
+	width:1200px;
+	margin:auto;
+}
+h1 {
+	font-size:64px;
+	text-align:center;
+	margin:12px 0 0 0;
+	padding:0;
+	text-shadow:rgba(0,0,0,0.30) 1px 1px 1px;
+}
+h2 {
+	color:#8D8D8D;
+	font-size:18px;
+	vertical-align:text-top;
+	margin:12px 0 80px 0;
+	letter-spacing:2px;
+	text-align:center;
+}
+h3 {
+	color:#aaa;
+	font-size:32px;
+	letter-spacing:40px;
+	text-transform:uppercase;
+	text-align:center;
+	margin:48px 0 80px 0;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight:300;
+	text-shadow:#888 0px 1px 0,
+				#888 1px 0px 0,
+				#888 1px 1px 0,
+				#888 1px 2px 0,
+				rgba(0,0,0,0.40) 3px 2px 4px;
+}
+h4 {
+	font-size:16px;
+	text-align:center;
+	margin:12px 0;
+	padding:0;
+	text-shadow:rgba(0,0,0,0.10) 1px 1px 1px;
+}
+	.subh3 {
+		font-size:14px;
+		letter-spacing:2px;
+		text-transform:none;
+	}
+.clockbox {
+	text-align:center;
+	height:128px;
+	width:1004px;
+	margin:0 auto;
+}
+
+#daysBox, #hoursBox, #minsBox, #secsBox {
+	float:left;
+	font-size:100px;
+	color:#fff;
+	background:#aaa;
+	background: linear-gradient(top,#bbb 0,#a0a0a0 100%);
+ 	background: -webkit-linear-gradient(top,#bbb 0,#a0a0a0 100%);
+ 	background: -moz-linear-gradient(top,#bbb 0,#a0a0a0 100%);
+ 	background: -o-linear-gradient(top,#bbb 0,#a0a0a0 100%);
+ 	background: -ms-linear-gradient(top,#bbb 0,#a0a0a0 100%);
+	width:200px;
+	text-align:center;
+	border-radius:16px;
+	-moz-border-radius:16px;
+	-webkit-border-top-left-radius:16px;
+	-webkit-border-bottom-left-radius:16px;
+	margin:auto;
+	box-shadow:inset rgba(0,0,0,0.30) 2px 2px 3px;
+	text-shadow:#999 0px 1px 0, #999 1px 0px 0, #999 1px 1px 0px, rgba(0,0,0,0.10) 2px 2px 2px;
+}
+#daysBox, #hoursBox, #minsBox, #secsBox {
+	margin:0 margin;
+}
+.col {
+	float:left;
+	font-size:100px;
+	margin-right:20px;
+	margin-left:20px;
+	text-align:center;
+	text-shadow:rgba(0,0,0,0.30) 1px 1px 1px;
+}
+
+table {
+	margin:0 auto;
+	background:#f3f3f3;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-top-left-radius:10px;
+	-webkit-border-bottom-left-radius:10px;
+}
+.footer {
+	font-size:12px;
+	text-align:center;
+	padding:8px 0;
+	color:#999;
+	background:#eee;
+	background: linear-gradient(top,#f8f8f8 0,#bbb 100%);
+ 	background: -webkit-linear-gradient(top,#f8f8f8 0,#ddd 100%);
+ 	background: -moz-linear-gradient(top,#f8f8f8 0,#ddd 100%);
+ 	background: -o-linear-gradient(top,#f8f8f8 0,#ddd 100%);
+ 	background: -ms-linear-gradient(top,#f8f8f8 0,#ddd 100%);
+	box-shadow:inset rgba(0,0,0,0.10) 0px 3px 3px;
+	margin: 32px auto 0 auto;
+	bottom:0;
+	position:relative;
+	overflow:hidden;
+	clear:both;
+}
+.buttonnest {
+	text-align:center;
+	padding:30px 8px 35px 8px;
+	margin:0 auto 72px auto;
+	background:#ddd;
+	box-shadow:inset rgba(0,0,0,0.20) 0px 2px 2px;
+}
+.article-button {
+	font-family:'Permanent Marker', 'Questrial', sans-serif;
+	margin:auto;
+	text-decoration:none;
+	letter-spacing:1px;
+	color:#fff;
+	padding:8px 16px;
+	background:#2CA9E1;
+	box-shadow:#2795BB 0px 1px 0,
+			   #2795BB 0px 2px 0,
+			   #2795BB 0px 3px 0,
+			   #2795BB 0px 4px 0,
+			   rgba(0,0,0,0.50) 1px 5px 3px;
+	border-radius:6px;
+	-moz-border-radius:6px;
+	-webkit-border-top-left-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+}
+	.article-button:hover{
+		background:#3CB9F1;
+		box-shadow:#37a5cB 0px 1px 0,
+			   #37a5cB 0px 2px 0,
+			   #37a5cB 0px 3px 0,
+			   #37a5cB 0px 4px 0,
+			   rgba(0,0,0,0.50) 1px 5px 3px;
+	}
+	.article-button:active {
+		position:relative;
+		top:3px;
+		box-shadow:#37a5cB 0px 1px 0,
+			   rgba(0,0,0,0.50) 1px 2px 3px;
+	}
+.nav {
+	margin-bottom:32px;
+}
+.nav, .nav a {
+	text-align:center;
+	text-decoration:none;
+	color:#F09C13;
+	transition:0.50s;
+}
+	.nav a:hover{
+		color:#5DB9F4;
+		transition:0.50s;
+	}
+.container{
+	height:500px;
+	overflow-y:scroll;
+	padding:4px;
+	background:#F8f8f8;
+	border-top-left-radius:6px;
+	-moz-border-top-left-radius:6px;
+	-webkit-border-top-left-radius:6px;
+	-webkit-border-top-left-radius:6px;
+	box-shadow:inset rgba(0,0,0,0.25) 1px 1px 3px;	
+}
+.list {
+	line-height:18px;
+	font-size:14px;
+}
+</style>
+
+<script type="text/javascript">
+function nwfc() {
+	var doomsday = new Date("May 20, 2014 00:01:00");
+	var now = new Date();
+	var timeDiff = doomsday.getTime() - now.getTime();
+	
+	var seconds = Math.floor(timeDiff / 1000);
+	var minutes = Math.floor(seconds / 60);
+	var hours = Math.floor(minutes / 60);
+	var days = Math.floor(hours / 24);
+	hours %= 24;
+	minutes %= 60;
+	seconds %= 60;
+	
+	document.getElementById("daysBox").innerHTML = days;
+	document.getElementById("hoursBox").innerHTML = hours;
+	document.getElementById("minsBox").innerHTML = minutes;
+	document.getElementById("secsBox").innerHTML = seconds;
+	
+	var timer = setTimeout('nwfc()',1000);
+}
+</script>
+</head>
+
+<body>
+<!--[if !IE 7]>
+	<style type="text/css">
+		#wrap {display:table;height:100%}
+	</style>
+<![endif]-->
+<div class="wrap">
+<div class="header">
+<h1>
+Goodbye, Wi-fi
+</h1>
+<h2>Nintendo <span style="color:#0097CB;">Wii</span>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Nintendo <span style="color:#CF000E;">DS</span></h2>
+<!-- <div class="cry">:<span style="color:#00ACF4;">'</span>(</div> -->
+    <div class="clockbox">
+        <div id="daysBox"></div>
+            <div class="col">:</div>
+        <div id="hoursBox"></div>
+            <div class="col">:</div>
+        <div id="minsBox"></div>
+            <div class="col">:</div>
+        <div id="secsBox"></div>
+    </div>
+<h3>May 20, 2014</h3>
+</div>
+
+<div>
+	<div class="buttonnest">
+	<a class="article-button" href="https://www.nintendo.com/whatsnew/detail/vyWpoM6CBIe6FjW8NIY7bvzOrgBURhzw">Official Article</a>
+	</div>
+</div>
+<div class="nav">
+<a href="#nintendods">Nintendo DS</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#nintendodsiware">Nintendo DSiWare</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#wii">Wii</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#wiiware">WiiWare</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#other">Other</a>
+</div>
+
+<table width="1000px" cellspacing="0">
+	<tr valign="top">
+    	<td><h4>Comments</h4>
+        <div></div>
+        </td>
+        <td width="400px;">
+        	<h4>Affected Games</h4>
+        	<div class="container">
+                <p class="list" id="nintendods">
+                  <b>Nintendo DS</b>
+                  <br />100 Classic Books
+                  <br />Animal Crossing: Wild World
+                  <br />Advance 
+                  Wars: Days of Ruin
+                  <br />Clubhouse Games
+                  <br />Custom Robo Arena
+                  <br />Diddy Kong 
+                  Racing DS
+                  <br />Dragon Quest IX: Sentinels of the Starry Skies
+                  <br />Dragon 
+                  Quest Monsters: Joker 2
+                  <br />Fire Emblem: Shadow Dragon
+                  <br />Fossil 
+                  Fighters: Champions
+                  <br />Legend of Zelda: Phantom Hourglass
+                  <br />Mario Kart 
+                  DS
+                  <br />Mario vs. Donkey Kong 2: March of the Minis
+                  <br />Mario vs. Donkey 
+                  Kong: Mini-Land Mayhem
+                  <br />Metroid Prime Hunters
+                  <br />Personal Trainer: 
+                  Walking
+                  <br />Picross 3D
+                  <br />Picross DS
+                  <br />Planet Puzzle League
+                  <br />Pok&#233;mon 
+                  Black Version
+                  <br />Pok&#233;mon Black Version 2
+                  <br />Pok&#233;mon Diamond Version
+                  <br />Pok&#233;mon 
+                  HeartGold Version
+                  <br />Pok&#233;mon Mystery Dungeon: Explorers of Darkness
+                  <br />Pok&#233;mon 
+                  Mystery Dungeon: Explorers of Sky
+                  <br />Pok&#233;mon Mystery Dungeon: Explorers 
+                  of Time
+                  <br />Pok&#233;mon Pearl Version
+                  <br />Pok&#233;mon Platinum Version
+                  <br />Pok&#233;mon 
+                  Ranger: Guardian Signs
+                  <br />Pok&#233;mon Ranger: Shadows of Almia
+                  <br />Pok&#233;mon 
+                  SoulSilver Version
+                  <br />Pok&#233;mon White Version
+                  <br />Pok&#233;mon White 
+                  Version 2
+                  <br />Professor Layton and the Curious Village
+                  <br />Professor 
+                  Layton and the Diabolical Box
+                  <br />Professor Layton and the Last Specter
+                  <br />Professor 
+                  Layton and the Unwound Future
+                  <br />Star Fox Command
+                  <br />Style Savvy
+                  <br />Tenchu: 
+                  Dark Secret
+                  <br />Tetris DS
+                  <br />WarioWare DIY
+                </p>
+                <p class="list" id="nintendodsiware">
+                  <b>Nintendo DSiWare</b>
+                  <br />Mario vs. Donkey Kong: Minis March Again!
+                  <br />Metal 
+                  Torrent
+                  <br />Number Battle
+                  <br />
+                </p>
+                <p class="list" id="wii">
+                  <b>Wii</b>
+                  <br />Animal Crossing: City Life
+                  <br />Battalion Wars 2
+                  <br />Endless 
+                  Ocean
+                  <br />Endless Ocean 2: Adventures of the Deep
+                  <br />Excitebots: Trick 
+                  Racing
+                  <br />Fortune Street
+                  <br />Mario Kart Wii
+                  <br />Mario Sports Mix
+                  <br />Mario 
+                  Strikers Charged
+                  <br />Pok&#233;mon Battle Revolution
+                  <br />Samurai Warriors 3
+                  <br />Sin 
+                  &amp; Punishment: Star Successor
+                  <br />Super Smash Brothers Brawl
+                  <br />Wii 
+                  Music*
+                </p>
+                <p class="list" id="wiiware">
+                  <b>WiiWare</b>
+                  <br />Dr. Mario Online RX
+                  <br />Excitebike: World Rally
+                  <br />LONPOS
+                  <br />Maboshi's 
+                  Arcade
+                  <br />My Pok&#233;mon Ranch
+                  <br />ThruSpace
+                  <br />WarioWare DIY
+                  <br />
+                </p>
+                <p class="list" id="other">
+                  <b>Other</b>
+                  <br />Wii Speak**
+                  <br />Wii Speak Channel**
+                  <br />
+                  <br />(*) Services 
+                  that require Internet communication ended on June 28, 2013.
+                  <br />(**) As 
+                  Nintendo Wi-Fi Connection is required to use this title, it is no longer 
+                  functional
+                  <br />
+                </p>
+            <div>
+        </td>
+    </tr>
+</table>
+</div>
+<div class="footer">
+	Site by Leon Williams
+</div>
+<script type="text/javascript">nwfc();</script>
+</body>
+</html>
