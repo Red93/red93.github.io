@@ -8,7 +8,16 @@
 		<source>http://red93.github.io/blog</source>
 		<note>This is a RSS feed. To follow this feed, give your RSS feed reader the link to this page.</note>
 		<description>If you want to know then new things happen on my site that may not be worthy of an entire blog, then this is the feed to subscribe to. When new features are added or changed on the site, or if I upload a new project, etc., I will notify subscribers by updating this feed. New blog posts will typically not be included in this feed, however, if you would like to follow my blog, you can do so here: http://red93.github.io/rss/rss-blogs.xml</description>
-		
+			
+			  <item>
+			   <title>False Alert</title>
+			   <description>This is a pointless update. There's nothing new to see.</description>
+			   <link>http://www.feedframe.net/</link>
+			   <pubDate></pubDate>
+			   <category></category>
+			   <author></author>
+			   <comments></comments>
+			  </item>
 			<item>
 				<title>RSS feeds</title>
 				<pubDate>Tue, 2 Apr 2014</pubDate>
