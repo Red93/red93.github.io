@@ -11,12 +11,9 @@
 			
 			  <item>
 			   <title>False Alert</title>
+			   <pubDate></pubDate>
+			   <link>http://www.feedframe.net/</link>
 			   <description>This is a pointless update. There's nothing new to see.</description>
-			   <link>http://www.feedframe.net/</link>
-			   <pubDate></pubDate>
-			   <category></category>
-			   <author></author>
-			   <comments></comments>
 			  </item>
 			<item>
 				<title>RSS feeds</title>
